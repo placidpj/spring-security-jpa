@@ -1,0 +1,15 @@
+
+this will hit mysql table to get valid user credentials using jpa.
+
+Below table created for simplicity and added data.
+mysql> CREATE TABLE users (
+    ->  id integer not null PRIMARY KEY,
+    ->     username VARCHAR(50) NOT NULL,
+    ->     password VARCHAR(50) NOT NULL,
+    ->     active BOOLEAN NOT NULL,
+    ->     roles VARCHAR(50) NOT NULL
+    -> );
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> insert into users values(1, 'user', 'pass', '1', 'ROLE_USER');
+Query OK, 1 row affected (0.01 sec)
